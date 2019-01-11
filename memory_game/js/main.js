@@ -46,10 +46,19 @@ var clearBoard = function() {
   createBoard();
 };
 
+var winCounter = 0;
+var gameCounter = 0;
+
 var checkForMatch = function () {
  if (cardsInPlay[0].rank === cardsInPlay[1].rank) {
+   winCounter ++;
+   gameCounter ++;
+   document.getElementById('gamesWon').innerHTML = winCounter;
+   document.getElementById('gamesPlayed').innerHTML = gameCounter;
   alert('You have a match!');
 } else {
+  gameCounter ++;
+  document.getElementById('gamesPlayed').innerHTML = gameCounter;
   alert('Sorry, try again.');
 }
 };
@@ -72,4 +81,3 @@ var flipCard = function () {
 
 
 resetBoard();
-//createBoard();

@@ -15,8 +15,28 @@ nav {
   padding: 20px 0;
 }
 
+.counter {
+width: 850px;
+}
+
+.playCounterContainer {
+  width: 240px;
+  float: left;
+}
+
+.winCounterContainer {
+  width: 240px;
+  float: right;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+
 button {
-  width: 50px;
+  display: inline;
+  width: 140px;
   background-color: #00a6b3;
   border-radius: 50px;
 }
